@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+/*Inicia el acordeon*/
+#acordeon input {
+    display: none;
+}
+#acordeon label {
+    display: block;
+    width: 100%;
+    line-height: 80px;
+    background: #ccc;
+    border: 1px solid #555;
+    cursor: pointer;
+}
+#acordeon h1 {
+    padding: 5%;
+}
+#acordeon img {
+    padding: 0% 5%;
+}
+#acordeon p {
+    width: 90%;
+    padding: 5%;
+    text-align: justify;
+}
+#acordeon div {
+    height: 0px;
+    /* Altura cero */
+    overflow: hidden;
+    /* Esconde el contenido */
+    transition: height .5s;
+    /* Hace que el crecimiento sea suave*/
+}
+/* 2. Cuando el usuario marca el bloque, la caja crece*/
+input#bloque1:checked~#cont1 {
+    height:384px;
+    /* Se estira hasta esta medida */
+}
+input#bloque2:checked~#cont2 {
+    height: 304px;
+    /* Se estira hasta esta medida */
+}
+input#bloque3:checked~#cont3 {
+    height: 304px;
+}
+input#bloque1:checked+label {
+    background: #900;
+    color: #fff;
+    height:384px;
+    /* Se estira hasta esta medida */
+}

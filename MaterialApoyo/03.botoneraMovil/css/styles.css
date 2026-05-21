@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+nav#botoneraMovil {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    background: ■white;
+    top: 50px;
+    left: -100%;
+    transition: right .5s;
+}
+nav#botoneraMovil ul li {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #fff;
+    background: #ccc;
+}
+nav#botoneraMovil ul li:hover {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #aaa;
+}
+label#labelMovil span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(../img/boton1.jpg) no-repeat;
+    margin: 5px;
+    cursor: pointer;
+}
+input#labelMovil {
+    display: none;
+}
+label#labelMovil h2 {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+label#labelMovil span:hover {
+    background: url(../img/boton2.jpg) no-repeat;
+}
+input#labelMovil:checked+label#labelMovil span {
+    left: 0;
+}
