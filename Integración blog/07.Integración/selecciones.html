@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Noticias - Mundial Deportes</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/53/53283.png" alt="Logo">
+            <h1>Mundial Deportes</h1>
+        </div>
+
+    </header>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="selecciones.html">Selecciones</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <section class="world-tab">
+        <header class="world-tab__header">
+            <h2 class="world-tab__title">Selecciones del Mundial</h2>
+            <p class="world-tab__subtitle">
+                La Copa del Mundo más grande de la historia. Por primera vez, el torneo insignia de la FIFA abandona el tradicional formato de 32 equipos para dar la bienvenida a 48 selecciones de todo el planeta, repartidas en 12 grupos de 4 integrantes. Organizado de forma conjunta por Estados Unidos, México y Canadá, este megaevento promete inyectar una dosis masiva de drama futbolístico con un total de 104 partidos a disputarse en 16 espectaculares ciudades sedes. No se trata solo de un torneo; es una fiesta global masiva donde los gigantes de siempre se medirán ante debutantes hambrientos de gloria en un formato donde cada gol cuenta.
+            </p>
+        </header>
+
+        <!-- Carrusel -->
+        <div class="carousel" aria-label="Carrusel de selecciones">
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior" type="button">
+            </button>
+
+            <div class="carousel__viewport">
+                <div class="carousel__track" id="carouselTrack">
+                    <!-- Slide 1 -->
+                    <article class="team-card carousel__slide">
+                        <div class="team-card__flag" aria-hidden="true"></div>
+                        <img class="team-card__img"
+                            src="img/CR7.jpg"
+                            alt="Portugal (CR7) - imagen representativa" loading="lazy" />
+                        <div class="team-card__content">
+                            <h3 class="team-card__name">Portugal</h3>
+                            <p class="team-card__meta">Cristiano Ronaldo</p>
+                        </div>
+                    </article>
+
+                    <!-- Slide 2 -->
+                    <article class="team-card carousel__slide">
+                        <div class="team-card__flag team-card__flag--blue" aria-hidden="true"></div>
+                        <img class="team-card__img"
+                            src="img/N.jpg"
+                            alt="Brasil - imagen representativa" loading="lazy" />
+                        <div class="team-card__content">
+                            <h3 class="team-card__name">Brasil</h3>
+                            <p class="team-card__meta">Neymar Jr.</p>
+                        </div>
+                    </article>
+
+                    <!-- Slide 3 -->
+                    <article class="team-card carousel__slide">
+                        <div class="team-card__flag team-card__flag--red" aria-hidden="true"></div>
+                        <img class="team-card__img"
+                            src="img/M.jpg"
+                            alt="Argentina - imagen representativa" loading="lazy" />
+                        <div class="team-card__content">
+                            <h3 class="team-card__name">Argentina</h3>
+                            <p class="team-card__meta">Lionel Messi</p>
+                        </div>
+                    </article>
+
+                    <!-- Slide 4 -->
+                    <article class="team-card carousel__slide">
+                        <div class="team-card__flag team-card__flag--green" aria-hidden="true"></div>
+                        <img class="team-card__img"
+                            src="img/K.jpg"
+                            alt="Francia - imagen representativa" loading="lazy" />
+                        <div class="team-card__content">
+                            <h3 class="team-card__name">Francia</h3>
+                            <p class="team-card__meta">Kylian Mbappé</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Slide 5 -->
+                    <article class="team-card carousel__slide">
+                        <div class="team-card__flag team-card__flag--green" aria-hidden="true"></div>
+                        <img class="team-card__img"
+                            src="img/J.jpg"
+                            alt="Alemania - imagen representativa" loading="lazy" />
+                        <div class="team-card__content">
+                            <h3 class="team-card__name">Alemania</h3>
+                            <p class="team-card__meta">Jamai Musiala</p>
+                        </div>  
+                    </article>
+                    <!-- Agrega más equipos repitiendo el bloque <article class="team-card ..."> -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="carousel__dots" aria-hidden="true">
+            <!-- (Opcional) puntos visuales. Sin JS, no se sincronizan. -->
+            <span class="dot"></span>
+            <span class="dot dot--active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <footer>
+
+        © 2026 Mundial Deportes
+
+    </footer>
+
+</body>
+
+</html>
