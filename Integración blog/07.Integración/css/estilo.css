@@ -428,7 +428,10 @@ footer {
     /* Espaciado de separación limpia entre las tarjetas */
     gap: 25px;
 }
-
+h1{
+	text-align: center;
+}
+	
 /* Estilos base de las tarjetas hijas */
 .tarjeta {
     background-color: #ffffff;
